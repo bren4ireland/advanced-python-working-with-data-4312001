@@ -1,7 +1,4 @@
-- task: AzureWebApp@1
+- task: IISWebAppDeploymentOnMachineGroup@0
   inputs:
-    azureSubscription: 'Azure subscription 1(24739089-b3ab-43bd-83b1-46900ac8492f)'
-    appType: 'webApp'
-    appName: 'bebs'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
+    WebSiteName: 'brena'
+    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
