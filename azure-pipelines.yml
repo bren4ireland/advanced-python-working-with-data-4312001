@@ -1,4 +1,9 @@
 - task: PythonScript@0
+- task: AzureKeyVault@2
+  inputs:
+    KeyVaultName: 'brendan4453426347'
+    SecretsFilter: '*'
+    RunAsPreJob: false
   inputs:
     scriptSource: 'inline'
     script: 'print("hello")'
