@@ -1,4 +1,4 @@
-- task: IISWebAppDeploymentOnMachineGroup@0
+- task: PythonScript@0
   inputs:
-    WebSiteName: 'brena'
-    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
+    scriptSource: 'inline'
+    script: 'print("hello")'
